@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-tdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/thiagostudier/nodejs-tdd.git",
+  "author": "Thiago Studier <thiago.studier9@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
