@@ -20,3 +20,20 @@ yarn sequelize migration:create --name=create-users
 yarn add nodemon -D
 
 yarn add jest -D
+
+yarn jest --init
+
+
+yarn add dotenv
+
+yarn add sqlite3 -D
+
+npm install -g win-node-env
+
+yarn add supertest -D
+
+yarn add bcryptjs
+
+yarn add jsonwebtoken
+
+yarn add faker
