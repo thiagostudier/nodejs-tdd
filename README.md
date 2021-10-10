@@ -1,39 +1,64 @@
-# nodejs-tdd
-Testes no NodeJS aplicando TDD com Jest | Rocketseat
+# Testes no NodeJS aplicando TDD com Jest
 
-Curso no youtube: https://www.youtube.com/watch?v=2G_mWfG0DZE&t=1281s&ab_channel=Rocketseat
+Projeto de uma vídeo aula da Rocketseat, criando um função de autenticação com NodeJS e conceitos de TSS com Jest
 
-yarn init -y
+**Curso no youtube**: https://www.youtube.com/watch?v=2G_mWfG0DZE&t=1281s&ab_channel=Rocketseat
 
-yarn add express
+## Clonando projeto...
 
-yarn add sequelize pg
+- `git clone https://github.com/thiagostudier/nodejs-tdd`
+- `cd nodejs-tdd`
+- `yarn install`
 
-yarn add sequelize mysql2
+### Rodando testes 
 
-yarn add sequelize-cli -D
+- `yarn test`
 
-yarn sequelize init
+## Comandos de criação do Projeto
 
-yarn sequelize migration:create --name=create-users
+Criar package.json
+- `yarn init -y`
 
-yarn add nodemon -D
+Instalar Express
+- `yarn add express`
 
-yarn add jest -D
+Instalar Sequelize e Postgres
+- `yarn add sequelize pg`
 
-yarn jest --init
+Instalar Sequelize e MySQL
+- `yarn add sequelize mysql2`
 
+Instalar SQLite
+- `yarn add sqlite3 -D`
 
-yarn add dotenv
+Arquivos e Comandos Sequelize
 
-yarn add sqlite3 -D
+- `yarn add sequelize-cli -D`
 
-npm install -g win-node-env
+- `yarn sequelize init`
 
-yarn add supertest -D
+- `yarn sequelize migration:create --name=create-users`
 
-yarn add bcryptjs
+Instalar Nodemon
+- `yarn add nodemon -D`
 
-yarn add jsonwebtoken
+Instalar Jest 
+- `yarn add jest -D`
 
-yarn add faker
+- `yarn jest --init`
+
+Instalando Dotenv 
+- `yarn add dotenv`
+
+- `npm install -g win-node-env`
+
+- `yarn add supertest -D`
+
+Instalar Bcryptjs - Para criptografia das senhas
+- `yarn add bcryptjs`
+
+Instalar JsonWebToken 
+- `yarn add jsonwebtoken`
+
+Instalar Faker - para gerar dados fakes 
+- `yarn add faker`
