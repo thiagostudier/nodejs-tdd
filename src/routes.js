@@ -1,13 +1,16 @@
-const routes = require('express').Router();
-const { User } = require('./app/models');
+const routes = require('express').Router()
 
-User.create({
-  name: "Thiago",
-  email: "thiago@mail",
-  password_hash: "123456789"
+const authMiddleware = require('./app/middleware/auth')
+
+const SessionController = require("./app/controllers/SessionController")
+
+routes.post("/sessions", SessionController.store)
+
+routes.use(authMiddleware) // APLICARÁ ÀS ROTAS ABAIXO
+
+routes.get("/dashboard", (req, res) => {
+    return res.status(200).send();
 })
-
-// DEFININDO ROTAS
 
 module.exports = routes;
 
